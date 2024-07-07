@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+
+  <body>
+
+
+    <header class="header">
+        <img class="header__imagen" src="assets/logo.png" alt="Logo de Alura"/>
+    </header>
+
+
+    <main class="main">
+
+      
+      <section class="main__acciones">
+       <textarea class="main__acciones__input" id="textoUsuario" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="main__acciones__alerta">
+          <img class="main__acciones__alerta__icon" src="assets/warning.png" alt="Imagen de alerta"/>
+          <p class="main__acciones__alerta__texto">Sólo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="main__acciones__botones">
+          <button class="main__acciones__botones__encriptar" onclick="encriptar();">Encriptar</button>
+          <button class="main__acciones__botones__desencriptar" onclick="desencriptar();">Desencriptar</button>
+        </div>
+      </section>
+
+      
+      <section class="main__resultado">
+        <textarea class="main__resultado__input" id="textoResultado" style="display: none;"></textarea>
+        <img class="main__resultado__imagen" id="desaparecerMunieco" src="assets/muneco.png" alt="imagen de Muñeco">
+        <div class="main__resultado__texto" id="desaparecerTexto">
+          <strong class="main__resultado__strong">Ningún mensaje fue encontrado</strong>
+          <p class="main__resultado__p">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+
+      </section>   
+      
+      
+    </main>
+
+    <footer></footer>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
